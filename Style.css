@@ -194,7 +194,6 @@ footer a:hover {
 
 .sidebar li {
   padding: 10px;
-  margin: 8px 0;
   border-bottom: 1px solid #dcb96e40;
   background: #0000002e;
   text-align: center;
@@ -262,26 +261,6 @@ footer a:hover {
 
   .intro header h1 {
     font-size: 2.4rem;
-  }
-
-  .intro header h2 {
-    font-size: 1rem;
-    letter-spacing: 1px;
-  }
-
-  .summary {
-    padding: 18px;
-    margin: 15px 8px;
-  }
-
-  .main.supporting,
-  .preamble {
-    padding: 0 15px;
-  }
-
-  h3 {
-    padding: 5px 15px;
-    font-size: .85rem;
   }
 
   .sidebar {
