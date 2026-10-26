@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Roboto+Slab:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #382412;
+  background:#f5f0c9;
+  font: 16px 'Roboto Slab';
+}
+
+.page-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.intro header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 310px;
+  padding: 60px 8%;
+  margin: 90px 12px 25px;
+  border: 8px double #351400;
+  text-align: center;
+}
+
+header::before {
+  content: "✦  ••  ✦";
+  color: #351400;
+  font-size: 25px;
+  letter-spacing: 15px;
+}
+
+.intro header h1,
+.intro header h2,
+h3 {
+  font-family: 'Special Elite', Georgia, serif;
+  text-transform: uppercase;
+}
+
+.intro header h1 {
+  margin: 15px 0 0;
+  color: #351400;
+  text-shadow: 3px 3px #c4a568;
+}
+
+.intro header h2 {
+  margin: 15px 0;
+  color: #8a612b;
+  font-size: clamp(1rem, 3vw, 1.7rem);
+  letter-spacing: 3px;
+}
+
+
+.summary {
+  padding: 25px;
+  margin: 15px 12px 30px;
+  border-left: 6px solid #b18a43;
+  background: #fffadca6;
+  font-style: italic;
+}
+
+.summary p {
+  margin: 0 0 15px;
+}
+
+.main.supporting,
+.preamble {
+  padding: 0 25px;
+}
+
+.preamble {
+  margin: 30px 12px;
+}
+
+h3 {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  padding: 5px 25px;
+  margin: 30px auto 20px;
+  border: 2px solid #9d793b;
+  background: #351400;
+  color: #f5f0c9;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 1px;
+  box-shadow: 4px 4px #35140026;
+}
+
+h3::before,
+h3::after {
+  position: absolute;
+  top: 50%;
+  color: #351400;
+  font-size: 1.6rem;
+  transform: translateY(-50%);
+}
+
+h3::before {
+  content: "<";
+  left: -20px;
+}
+
+h3::after {
+  content: ">";
+  right: -20px;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+abbr {
+  text-decoration: underline solid;
+  text-underline-offset: 3px;
+  cursor: help;
+}
+
+a {
+  color: #76501f;
+  font-weight: 700;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+  transition: color .25s;
+}
+
+a:hover {
+  color: #b27b27;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 30px 15px;
+  margin-top: 40px;
+  border-top: 5px double #351400;
+  background: #e4d5a4;
+}
+
+footer a {
+  min-width: 48px;
+  padding: 5px 12px;
+  border: 1px solid #b18a43;
+  background: #351400;
+  color: #f5f0c9;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff2bd;
+  background: #68401b;
+}
+
+.sidebar {
+  padding: 15px;
+  margin: 20px 12px;
+  border: 5px double #b18a43;
+  background: #351400;
+  color: #f5f0c9;
+}
+
+.sidebar h3 {
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0;
+  border: 2px solid #b18a43;
+  background: #f5f0c9;
+  color: #351400;
+  font-size: .9rem;
+}
+
+.sidebar h3::before,
+.sidebar h3::after {
+  display: none;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px;
+  margin: 8px 0;
+  border-bottom: 1px solid #dcb96e40;
+  background: #0000002e;
+  text-align: center;
+}
+
+.sidebar a {
+  color: #f4e7bc;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #e8bd63;
+  text-decoration: underline;
+}
+
+.design-name {
+  display: block;
+  font-weight: 700;
+}
+
+.designer-name {
+  font-size: .85rem;
+}
+
+@media (min-width: 900px) {
+  .page-wrapper {
+    position: relative;
+    padding-left: 220px;
+  }
+
+  .intro header {
+    margin-top: 35px;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 195px;
+    margin: 0 12px;
+  }
+
+  .summary {
+    margin-top: 25px;
+  }
+
+  .main.supporting,
+  .preamble {
+    padding: 0 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .intro header {
+    min-height: 270px;
+    padding: 35px 15px;
+    margin: 20px 8px;
+    border-width: 5px;
+  }
+
+  .intro header h1 {
+    font-size: 2.4rem;
+  }
+
+  .intro header h2 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .summary {
+    padding: 18px;
+    margin: 15px 8px;
+  }
+
+  .main.supporting,
+  .preamble {
+    padding: 0 15px;
+  }
+
+  h3 {
+    padding: 5px 15px;
+    font-size: .85rem;
+  }
+
+  .sidebar {
+    padding: 12px;
+    margin: 15px 8px;
+  }
+}
